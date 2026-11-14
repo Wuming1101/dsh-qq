@@ -1,0 +1,40 @@
+{
+  "name": "dsh-qq",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "把 QQ（NapCat / OneBot11）接到 DeepSeek Harness：私聊/群聊变成持久 Agent 会话，带拟人分条、图片/表情/文件、语音转写、模型与预设覆盖",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./splitter.mjs": "./splitter.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "splitter.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.1": "compatible"
+      }
+    }
+  },
+  "license": "MIT",
+  "author": {
+    "name": "温凌微 (Vera)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wuming1101/dsh-qq.git"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

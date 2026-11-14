@@ -1,0 +1,17 @@
+# dsh-qq 的挂载声明。
+# owners / cwd / token / provider / model 必须在你自己的 profile 的 cordis.patch.yml 里填，
+# 本文件保持空值，避免把个人配置带进仓库。
+- insert:
+    - id: dsh-qq
+      name: 'dsh-qq'
+      config:
+        wsUrl: ws://127.0.0.1:3001
+        token: ''
+        owners: []
+        cwd: ''
+        provider: ''
+        model: ''
+        reasoningEffort: ''
+        agentPreset: ''
+        groupMessages: true
+        followLines: true
